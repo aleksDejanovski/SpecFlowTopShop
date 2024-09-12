@@ -132,3 +132,4 @@ C:\Users\AcoBradica\source\repos\TestingAutomation\bin\Debug\net6.0\WebDriver.dl
 C:\Users\AcoBradica\source\repos\TestingAutomation\bin\Debug\net6.0\System.Text.Encodings.Web.dll
 C:\Users\AcoBradica\source\repos\TestingAutomation\bin\Debug\net6.0\System.Text.Json.dll
 C:\Users\AcoBradica\source\repos\TestingAutomation\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\AcoBradica\source\repos\TestingAutomation\bin\Debug\net6.0\SeleniumExtras.WaitHelpers.dll

@@ -16,9 +16,7 @@ namespace TestingAutomation.Hooks
     [Binding]
     public class SeleniumBindings
     {
-        // LoginPage LoginPage => new LoginPage(Driver);
-        //private IWebDriver Driver;
-
+     
 
         private readonly IObjectContainer container;
 
