@@ -14,18 +14,19 @@ namespace TestingAutomation.Pages
         private readonly By txtUserName = By.Id("email");
         private readonly By txtPassword = By.Id("pass");
         private readonly By btnNajaviSe = By.Id("send2");
-        
+        private readonly string userLoggedInUrl = "account";
+        private readonly By lblErrorMessage = By.Id("advice-validate-email-email");
 
 
 
-         private WebDriverWait Wait;
+         
 
 
         public LoginPage(IWebDriver driver) : base(driver)
         {
         }
 
-
+        
 
         public bool IfUserIsOnLoginPage()
         {
@@ -33,9 +34,8 @@ namespace TestingAutomation.Pages
         }
 
         public void SubmitLoginForm(string username, string password)
-        {
-            WebDriverWait Wait = new WebDriverWait(Driver,timeout:TimeSpan.FromSeconds(12));
-            Wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(txtUserName));
+        {   
+            WaitElementToAppear(Driver, txtUserName);
             Driver.FindElement(txtUserName).SendKeys(username);
             Driver.FindElement(txtPassword).SendKeys(password);
             Driver.FindElement(btnNajaviSe).Click();
@@ -43,11 +43,15 @@ namespace TestingAutomation.Pages
 
         public bool IfUserIsLoggedIn(string welcomeText)
         {
-            WebDriverWait Wait = new WebDriverWait(Driver, timeout: TimeSpan.FromSeconds(12));
-            Wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.UrlContains("account"));
+            WaitUrlToContain(Driver, userLoggedInUrl);
             return  Driver.FindElement(By.XPath($"//strong[text()='{welcomeText}']")).Enabled;
         }
 
+        public bool IfErrorMessageAppears()
+        {
+            WaitElementToAppear(Driver,lblErrorMessage);
+            return true;
+        }
             
     }
 }

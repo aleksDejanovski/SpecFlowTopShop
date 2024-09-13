@@ -48,7 +48,7 @@ namespace TestingAutomation.StepDefinitions
         {
             DashBoardPage.ClickLoginRedButton(titleText);
         }
-
+        [When(@"I enter the invalid username as ""([^""]*)"", password as ""([^""]*)"" and click submit")]
         [When(@"I enter the username as ""([^""]*)"", password as ""([^""]*)"" and click submit")]
         public void WhenIEnterTheUsernameAsPasswordAsAndClickSubmit(string username, string pass)
         {
@@ -68,6 +68,13 @@ namespace TestingAutomation.StepDefinitions
         {
             Assert.True(LoginPage.IfUserIsOnLoginPage(), "User is not on login page");
         }
+
+        [Then(@"The user should not be able to login and error message appears")]
+        public void ThenTheUserShouldNotBeAbleToLoginAndErrorMessageAppears()
+        {
+            Assert.True(LoginPage.IfErrorMessageAppears());
+        }
+
 
 
         [Then(@"The user should be sucessfuly loged in and text ""([^""]*)"" should be presented at the page")]
