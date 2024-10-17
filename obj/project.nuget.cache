@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dvpOJm9HC2k=",
+  "dgSpecHash": "hz60Asf+BI8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\AcoBradica\\source\\repos\\TestingAutomation\\TestingAutomation.csproj",
+  "projectFilePath": "C:\\Users\\AcoBradica\\source\\repos\\spekflowTopsop\\SpecFlowTopShop\\TestingAutomation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AcoBradica\\.nuget\\packages\\bodi\\1.5.0\\bodi.1.5.0.nupkg.sha512",
     "C:\\Users\\AcoBradica\\.nuget\\packages\\dotnetseleniumextras.waithelpers\\3.11.0\\dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",

@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TestingAutomation
-build_property.ProjectDir = C:\Users\AcoBradica\source\repos\TestingAutomation\
+build_property.ProjectDir = C:\Users\AcoBradica\source\repos\spekflowTopsop\SpecFlowTopShop\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

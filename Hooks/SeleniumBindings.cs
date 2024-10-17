@@ -31,6 +31,7 @@ namespace TestingAutomation.Hooks
         public void SetUp()
         {
             IWebDriver Driver = new ChromeDriver();
+            Driver.Manage().Window.Maximize();
             container.RegisterInstanceAs<IWebDriver>(Driver);
             
         }

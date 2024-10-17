@@ -12,7 +12,7 @@ namespace TestingAutomation.Pages
     {
 
         private readonly By btnLogin = By.ClassName("header-sign-in");
-        
+        private readonly By lblKitchen = By.XPath("//span[text()='Kујна']");
       
 
         public DashBoardPage(IWebDriver driver) : base(driver)
@@ -39,7 +39,11 @@ namespace TestingAutomation.Pages
             Driver.FindElement(By.CssSelector($"a[title='{title}']")).Click() ;
         }
 
-
+        public void ClickKitchenButton()
+        {
+            WaitElementToAppear(Driver, lblKitchen);
+            Driver.FindElement(lblKitchen).Click();
+        }
        
 
 

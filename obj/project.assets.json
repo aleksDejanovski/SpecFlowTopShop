@@ -7866,11 +7866,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AcoBradica\\source\\repos\\TestingAutomation\\TestingAutomation.csproj",
+      "projectUniqueName": "C:\\Users\\AcoBradica\\source\\repos\\spekflowTopsop\\SpecFlowTopShop\\TestingAutomation.csproj",
       "projectName": "TestingAutomation",
-      "projectPath": "C:\\Users\\AcoBradica\\source\\repos\\TestingAutomation\\TestingAutomation.csproj",
+      "projectPath": "C:\\Users\\AcoBradica\\source\\repos\\spekflowTopsop\\SpecFlowTopShop\\TestingAutomation.csproj",
       "packagesPath": "C:\\Users\\AcoBradica\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AcoBradica\\source\\repos\\TestingAutomation\\obj\\",
+      "outputPath": "C:\\Users\\AcoBradica\\source\\repos\\spekflowTopsop\\SpecFlowTopShop\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\AcoBradica\\AppData\\Roaming\\NuGet\\NuGet.Config",
